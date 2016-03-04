@@ -5,29 +5,43 @@
 
 
 <style>
-.draggable { 
-width: 150px; 
-height: 150px; 
-padding: 0.5em;
-cursor: grab;
-background: tomato;
-color: white; 
-user-select: none;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+p { 
+	width: 150px; 
+	height: 150px; 
+	padding: 0.5em;
+	cursor: grab;
+	background: #40e080;
+	color: black; 
+	user-select: none;
+}
+.bg{
+	height: 100%;
+	width: 100%;
+	background: #333;
+}
+.ui-draggable-dragging{
+	box-shadow: 10px 10px rgba(0,0,0,0.6);
+	z-index: 1;
 }
 </style>
 
 
 <script>
 $(function() {
-	$(".draggable").draggable();
+	$(".bg").draggable()
+	$("p").draggable()
+	$(".view").resizable();
 });
 </script>
 
 
-<div class="draggable ui-widget-content">
-<div class = draggable>
-<p>A</p>
-<p>B</p>
-<p>C</p>
-</div>
+<div class="bg">
+	<p>A</p>
+	<p>B</p>
+	<p>C</p>
 </div>
