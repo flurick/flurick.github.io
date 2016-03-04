@@ -1,13 +1,29 @@
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<meta charset="utf-8">
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
 
 <style>
-#draggable { width: 150px; height: 150px; padding: 0.5em; }
+#draggable { 
+width: 150px; 
+height: 150px; 
+padding: 0.5em;
+cursor: grab;
+background: tomato;
+color: white; 
+user-select: none;
+}
 </style>
+
 
 <script>
 $(function() {
-  $("p").draggable();
+	$("#draggable").draggable();
 });
 </script>
 
-<p>Hello Github</p>
+
+<div id="draggable" class="ui-widget-content">
+	<p>Drag me around</p>
+</div>
