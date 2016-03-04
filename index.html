@@ -5,7 +5,7 @@
 
 
 <style>
-#draggable { 
+.draggable { 
 width: 150px; 
 height: 150px; 
 padding: 0.5em;
@@ -19,13 +19,13 @@ user-select: none;
 
 <script>
 $(function() {
-	$("#draggable").draggable();
+	$(".draggable").draggable();
 });
 </script>
 
 
-<div id="draggable" class="ui-widget-content">
-<div>
+<div class="draggable ui-widget-content">
+<div class = draggable>
 <p>A</p>
 <p>B</p>
 <p>C</p>
