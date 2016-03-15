@@ -1,47 +1,108 @@
+<!DOCYTPE html>
 <meta charset="utf-8">
-
-<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<title>flurick</title>
 
 
 <style>
+
 *{
-	margin: 0;
+	-transition-delay: 0.3s;
+	-transition: 0.3s;
 	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
 }
-p { 
-	width: 150px; 
-	height: 150px; 
-	padding: 0.5em;
-	cursor: grab;
-	background: #40e080;
-	color: black; 
-	user-select: none;
+
+h1,h2,h3,h4,h5,h6{
+	font-size: inherit;
+	text-transform: uppercase;
 }
+
 .bg{
 	height: 100%;
 	width: 100%;
-	background: #333;
 }
+
 .ui-draggable-dragging{
 	box-shadow: 10px 10px rgba(0,0,0,0.6);
 	z-index: 1;
 }
+
+body{
+	background: skyblue;
+}
+
+img{
+	width: 500px;
+	max-width: 100%;
+}
+
+.posts li{
+	font-size: 10pt;
+	background: wheat;
+	overflow: scroll;
+	width: 300px;
+	height: 300px;
+	border: 0;
+	padding: 10px;
+	display: inline-block;
+	outline: 1px solid white;
+}
+
+
+
+nav, .corner_move, .corner_resize{
+	z-index: 999;
+	position: fixed;
+	background: rgba(255,255,255,0.8);
+}
+nav{
+	top: 0;
+	left: 0;
+	padding: 10px;
+	border-radius: 0 0 25px;
+	list-style: none;
+}
+.corner_move{
+	font-size: 50px;
+	width: 50px;
+	height: 50px;
+	bottom: 0;
+	left: 0;
+	border-radius: 0 25px 0 0;
+}
+.corner_resize{
+	font-size: 50px;
+	width: 50px;
+	height: 50px;
+	top: 0;
+	right: 0;
+	border-radius: 0 0 0 25px;
+}
+
 </style>
 
 
-<script>
-$(function() {
-	$(".bg").draggable()
-	$("p").draggable()
-	$(".view").resizable();
-});
+<nav><li>Navigation</li></nav>
+<ul class=posts></ul>
+
+<div class="corner_move"></div>
+<div class="corner_resize"></div>
+
+
+<script src="jq221.js"></script> 
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	
+	var files = ["cinc", "k", "krita", "draw", "smalltalk", "godot", "croquet"]
+	for (let f of files){
+		$(".posts").append( $("<li>"+f+"</li>").load(f+".html").attr("id",f) )
+		$("nav").append( $("<a href="+f+">") )
+	}
+
+	$(".posts *").draggable()
+
+})
 </script>
-
-
-<div class="bg">
-	<p>A</p>
-	<p>B</p>
-	<p>C</p>
-</div>
