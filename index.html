@@ -82,13 +82,11 @@ nav{
 
 </style>
 
-
-<nav><li>Navigation</li></nav>
+<canvas id="canvas" width="2000" height="2000"></canvas>
+<nav><h1>Navigator</h1></nav>
 <ul class=posts></ul>
-
 <div class="corner_move"></div>
 <div class="corner_resize"></div>
-
 
 <script src="jq221.js"></script> 
 <script src="jqu1114.js"></script>
@@ -96,13 +94,60 @@ nav{
 
 $(function(){
 	
-	var files = ["cinc", "k", "krita", "draw", "smalltalk", "godot", "croquet"]
+	files = ["cinc", "k", "krita", "draw", "smalltalk", "godot", "croquet"]
 	for (let f of files){
 		$(".posts").append( $("<li>"+f+"</li>").load(f+".html").attr("id",f) )
-		$("nav").append( $("<a href="+f+">") )
+		//$("a").fadeOut()
+		$("nav").append( $("<li><a href=#" +f+ ">" +f+ "</a></li>") )
 	}
 
-	$(".posts *").draggable()
+	$("#canvas").attr( "width", $(window).width() )
+	$(".posts *").draggable() 
+	$("nav").draggable() 
+	$(".posts *").mousedown( function(){
+		$(".posts *").css("z-index","0")
+		$(this).css("z-index","10")
+	})
+
+	$("a").on({
+		"mouseenter": function(){
+
+			a = $(this).offset()
+			id = $(this).attr("href")
+			$(id).addClass("mark")
+			b = $(id).offset()
+			clear()
+			line(a.left,a.top, b.left,b.top)
+
+		},"mouseleave": function() {
+
+			clear()
+			$(id).removeClass("mark")
+			
+		}
+	})
 
 })
+
+function line(ax,ay, bx,by){
+	var x = window.pageXOffset
+	var y = window.pageYOffset
+
+	var canvas = document.getElementById("canvas")
+	var ctx = canvas.getContext("2d")
+
+	ctx.moveTo(ax-x, ay-y)
+	ctx.lineTo(bx-x, by-y)
+	ctx.stroke()
+	//console.log(ax,ay, bx,by)
+}
+
+function clear(){
+	var canvas = document.getElementById("canvas")
+	var ctx = canvas.getContext("2d")
+
+	ctx.clearRect(0,0, canvas.width,canvas.height)
+	canvas.width = canvas.width //sorry
+}
+
 </script>
