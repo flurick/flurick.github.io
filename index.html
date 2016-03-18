@@ -25,11 +25,13 @@ h1,h2,h3,h4,h5,h6{
 
 .ui-draggable-dragging{
 	box-shadow: 10px 10px rgba(0,0,0,0.6);
-	z-index: 1;
+	z-index: 20;
 }
 
 body{
 	background: skyblue;
+	height: 100%;
+	width: 100%;
 }
 
 img{
@@ -39,7 +41,6 @@ img{
 
 .posts li{
 	font-size: 10pt;
-	background: wheat;
 	overflow: scroll;
 	width: 300px;
 	height: 300px;
@@ -47,10 +48,30 @@ img{
 	padding: 10px;
 	display: inline-block;
 	outline: 1px solid white;
+	color: #000;
+}
+
+.posts li{
+	background: wheat;
+	color: rgba(0,0,0, 0.3);
+}
+.posts li:hover, .posts .mark{
+	background: white;
+	color: rgba(0,0,0, 1);
+}
+
+a{
+	color: inherit;
 }
 
 
-
+#canvas{
+	position: fixed;
+	left:0;
+	top:0;
+	z-index: 999;
+	pointer-events: none;
+}
 nav, .corner_move, .corner_resize{
 	z-index: 999;
 	position: fixed;
@@ -59,9 +80,17 @@ nav, .corner_move, .corner_resize{
 nav{
 	top: 0;
 	left: 0;
-	padding: 10px;
-	border-radius: 0 0 25px;
+	padding: 15px;
+	border-radius: 3px;
+	margin: 3px;
 	list-style: none;
+	border-top: 2px solid white;
+	border-bottom: 2px solid grey;
+}
+nav *{
+	color: black;
+	text-decoration: none;
+	display: block;
 }
 .corner_move{
 	font-size: 50px;
@@ -69,7 +98,7 @@ nav{
 	height: 50px;
 	bottom: 0;
 	left: 0;
-	border-radius: 0 25px 0 0;
+	border-radius: 0 100% 0 0;
 }
 .corner_resize{
 	font-size: 50px;
@@ -77,10 +106,10 @@ nav{
 	height: 50px;
 	top: 0;
 	right: 0;
-	border-radius: 0 0 0 25px;
+	border-radius: 0 0 0 100%;
 }
-
 </style>
+
 
 <canvas id="canvas" width="2000" height="2000"></canvas>
 <nav><h1>Navigator</h1></nav>
