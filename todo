@@ -1,0 +1,131 @@
+<meta charset=utf-8>
+
+
+
+<style type="text/css">
+
+
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		user-select: none;
+		-webkit-user-select: none;
+		cursor: pointer;
+	}
+
+	body{background: black;}
+
+	input,button{
+		padding: 20px;
+		width: 100%;
+	}
+
+	ul{
+		display: flex;
+		flex-flow: row wrap;
+		list-style: none;
+	}
+
+	li{
+	    flex-grow: 1;
+		padding: 20px;
+		min-width: 44px;
+
+		color: white;
+		outline: 1px dashed white;
+		background: red;
+
+		text-transform: uppercase;
+		font-size: 36pt;
+		font-family: serif;
+		text-align: center;
+	}
+
+	li{
+		transition-duration: 0.1s;
+	}
+	.done{
+		opacity: 0.4;
+		background: lightgreen;
+	}
+	li:before{
+		content: '✓';
+		opacity: 0;
+	}
+	li.done:before{
+		opacity: 1;
+	}
+
+</style>
+
+
+
+
+
+<input placeholder="todo"></input>
+
+<ul class=todo>
+	<li>exercise</li>
+	<li>relate</li>
+	<li>learn</li>
+</ul>
+
+
+
+
+
+<script src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+
+
+if (localStorage.getItem("list")) {
+	console.log("load")
+	$(".todo").html(localStorage.getItem("list"))
+}
+
+
+updateEvents()
+
+
+$("input").dblclick(function(){
+	localStorage.removeItem("list")
+	location.reload()
+})
+
+
+function updateEvents (argument) {
+
+	$("li").dblclick(function(){
+		$(this).remove()
+	})
+
+	$("li").click(function(){
+		$(this).toggleClass("done")
+	})
+
+	localStorage.setItem("list", $(".todo").html())
+}
+
+
+function addItem(text) {
+	$(".todo").append("<li>"+text+"</li>")
+	$("input").click(function(){setColors()})
+	$("li").click(function(){
+		$(this).toggleClass("done")
+	})
+	localStorage.setItem("list", $(".todo").html())
+}
+
+
+$("input").keyup(function (e) {
+	if (e.keyCode == 13) {
+		addItem(this.value)
+		this.value = ""
+		updateEvents()
+	}
+});
+
+
+
+</script>
