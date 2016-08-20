@@ -1,7 +1,5 @@
 <!DOCYTPE html>
 <meta charset="utf-8">
-<title>flurick</title>
-
 
 <style>
 
@@ -114,6 +112,156 @@ nav *{
 	border-radius: 0 0 0 100%;
 }
 </style>
+
+<h1>croquet</h1>
+<a href=https://en.wikipedia.org/wiki/Croquet_Project>croquet</a>
+
+
+
+<h1>draw</h1>
+<a href=https://vimeo.com/64895205>Stop Drawing Dead Fish <br> Bret Victor</a>
+<hr>
+<a href=https://en.wikipedia.org/wiki/Sketchpad>Sketchpad (Robot Draftsman) <br> Ivan Sutherland</a>
+<hr>
+<a href=https://www.ted.com/talks/alan_kay_shares_a_powerful_idea_about_ideas>Powerful idea about ideas <br> Alan Kay</a>
+
+
+<h1>godot</h1>
+<a href="http://godotengine.org/"><h1>Godot</h1></a>
+2D and 3D open source game engine
+
+Add an object to the tree, add a script to the object like:
+
+<pre>
+extends SomeClass
+
+var speed = 4
+var body = { 
+	hand:50, 
+	fot:100, 
+	head:30 
+}
+var inventory = []
+
+func _ready():
+	#keep running _process()
+	set_proces_(true)  
+
+func _process():
+	dosomething()
+
+func dosomething():
+	move( getinput()*speed ) 
+
+func getinput():
+	...
+</pre>
+
+
+<h1>kparc</h1>
+<a href=http://kparc.com/>kparc</a>
+<pre>
+<a href="k.txt">k</a> programming language (atom list map)  <a href="http://kx.com">kx.com</a>
+<a href="d.txt">kdb</a> universal database (store anything. compute anything. fast.)
+<a href="fun.k">fun</a> <a href="advent">adventofcode</a> <a href="z">more</a>
+
+$k
+ s:2            / atom(scalar)
+ v:2 3 4        / list(vector)
+ s+v
+4 5 6
+ m:(v;3 4 5)    / list(matrix)
+ +/m            / + over
+5 7 9
+ +/'m           / + over each
+9 12
+ v 1            / apply(index)
+3
+
+ d:`a`b!2 3     / dictionary
+ d`b            / apply(assoc)
+3
+ d+d
+`a`b!4 6
+
+ f:{x+2}        / function
+ f 1            / apply(call)
+3
+ f v
+4 5 6
+..
+
+k is similar to python but does more with less, e.g.
+trillion row databases <a href="q4">q4</a> and self-contained graphics <a href="edit.k">edit.k</a>
+
+<a href="lisp.txt">lisp and apl</a>
+<a href="http://www.jsoftware.com/papers/tot.htm">iverson: turing award paper</a>
+<a href="http://www.jsoftware.com/papers/perlis77.htm">perlis: lyrical programming</a>
+
+</pre>
+
+
+
+<h1>Krita: digital painting</h1>
+<pre><strong>user</strong> 
+<a href="http://krita.org">home</a>
+<a href="http://docs.krita.org">docs</a> 
+
+<strong>dev </strong>
+(2.x stable with qt4, 3.x with qt5 is git master and "next")
+clone git://anongit.kde.org/krita.git
+<a href="https://bugs.kde.org/buglist.cgi?quicksearch=Product%3Akrita">bug list</a> 
+<a href="https://bugs.kde.org/component-report.cgi?product=krita">bug table</a> 
+<a href="https://quickgit.kde.org/?p=krita.git">git</a> 
+<a href="https://github.com/KDE/krita">git mirror</a> 
+<a href="https://community.kde.org/Krita">dev wiki</a> 
+<a href="https://community.kde.org/Calligra/Building/2">compiling</a> 
+<a href="http://davidrevoy.com/article193/guide-building-krita-on-linux-for-cats">cat guide</a> 
+<a href="http://api.kde.org/bundled-apps-api/calligra-apidocs/krita/html/index.html">api</a> 
+
+<strong>com</strong> 
+<a href="http://news.gmane.org/gmane.comp.kde.devel.krita">mailing list</a> 
+<a href="https://forum.kde.org/viewforum.php?f=136">forum</a> 
+<a href="https://krita.org/irc/">freenode#krita</a> 
+<a href="https://phabricator.kde.org/project/query/all/">phabricator</a></pre>
+
+
+
+<h1>smalltalk</h1>
+<a href=http://squeak.org/>squeak</a> 
+<a href=http://www.smalltalk.gnu.org/>gnu</a>
+<a href=http://pharo.org/>pharo</a>
+
+<pre>
+|y|
+true &amp; false not &amp; (nil isNil) ifFalse: [self halt].
+y := self size + super size.
+#($a #a ’a’ 1 1.0)
+  do: [:each | Transcript
+    show: (each class name);
+    show: (each printString);
+    show: ’ ’].
+^ x &lt; y
+</pre>
+
+A Complete syntax example from&nbsp; <a href="http://stephane.ducasse.free.fr/Web/BotsInc/ExtraChapter-Syntax.pdf">pdf</a>
+
+
+
+<h1>Alan Watts</h1>
+
+<blockquote>The only way to make sense out of change is to plunge into it, move with it, and join the dance.</blockquote>
+</br>
+
+<blockquote>You and I are all as much continuous with the physical universe as a wave is continuous with the ocean.</blockquote>
+</br>
+
+<blockquote>
+Seeing that there isnt really anything we can do, to imporove our self or to improve the world. If we realize that that is so it gives us a breather, in the course of which we may simply watch what is going on, watch what happends ... and don't be in a hurry to think you know what it is.
+</blockquote>
+
+
+
 
 
 <canvas id="canvas" width="2000" height="2000"></canvas>
