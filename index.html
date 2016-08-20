@@ -12,19 +12,24 @@
 body,html{
 	height: 100%;
 	width: 100%;
-	overflow: hidden;
 	background: wheat;
 }
 article{
 	height: 100%;
 	width: 100%;
-	overflow: scroll;
 	font-size: 2vw;
 	padding: 1ch;
-	display: none;
+
+	position: absolute;
+	overflow: scroll;
+	transition-duration: 1s;
+	opacity: 0;
+	left: -100%;
 }
 article:focus, article:target{
-	display: block;
+	top: 0;
+	left: 0;
+	opacity: 1;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -34,7 +39,7 @@ h1,h2,h3,h4,h5,h6{
 nav ul {
 	background: wheat;
 	opacity: 0.5;
-	padding: 2ch;
+	padding-right: 2ch;
     position: absolute;
     right: 0;
     text-align: right;
@@ -42,6 +47,7 @@ nav ul {
     /* top: 50%; */
     line-height: 44px;
     text-transform: uppercase;
+    z-index: 1;
 }
 </style>
 
