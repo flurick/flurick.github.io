@@ -3,6 +3,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	outline: 0;
+	line-height: 1.5em;
 }
 
 html,body{
@@ -12,4 +13,32 @@ html,body{
 
 h1,h2,h3,h4,h5,h6{
 	text-transform: uppercase;
+	font-family: frenchpress, helvetica;
+}
+
+
+
+body{
+	background: tan;
+	display: flex;
+    flex-flow: row wrap;
+}
+
+article{
+	border: 1px solid #555;
+	margin: 4ch;
+	padding: 1ch 2ch;
+	border-radius: 3px;
+	background: wheat;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+}
+
+p{
+	color: #333;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0, 0.2);
 }
