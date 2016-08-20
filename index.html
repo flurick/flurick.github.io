@@ -2,28 +2,68 @@
 <meta charset="utf-8">
 
 <style type="text/css">
-	article{
-		-margin: 16ch;
-		height: 100%;
-		overflow: scroll;
-		border-bottom: 3px solid tomato;
-		font-size: 2vw;
-	}
-	h1,h2,h3,h4,h5,h6{
-		font-size: 4vw;
-		text-transform: uppercase;
-	}
-	article:last-child{
-		border: 0;
-	}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: 0;
+	line-height: 1.5em;
+}
+body,html{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background: wheat;
+}
+article{
+	height: 100%;
+	width: 100%;
+	overflow: scroll;
+	font-size: 2vw;
+	padding: 1ch;
+}
+article:focus{
+	display: block;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-size: 4vw;
+	text-transform: uppercase;
+}
+nav ul {
+	background: wheat;
+	opacity: 0.5;
+	padding: 2ch;
+    position: fixed;
+    right: 0;
+    text-align: right;
+    list-style: none;
+    /* top: 50%; */
+    line-height: 44px;
+    text-transform: uppercase;
+}
 </style>
 
 
-<article>
+<nav>
+<ul>
+<li><a href="#croquet">croquet</a></li>
+<li><a href="#draw">draw</a></li>
+<li><a href="#godot">godot</a></li>
+<li><a href="#kparc">kparc</a></li>
+<li><a href="#krita">krita</a></li>
+<li><a href="#smalltalk">smalltalk</a></li>
+<li><a href="#watts">watts</a></li>
+</ul>
+</nav>
+
+
+<article id=croquet>
 <h1><a href=https://en.wikipedia.org/wiki/Croquet_Project>Croquet - shared 3D worlds</a></h1>
 
-</article><article>
+</article>
 
+<article id=draw>
 <h1>Draw</h1>
 <a href=https://vimeo.com/64895205>Stop Drawing Dead Fish <br> Bret Victor</a>
 <hr>
@@ -34,7 +74,7 @@
 </article>
 
 
-<article>
+<article id=godot >
 <a href="http://godotengine.org/"><h1>Godot</h1></a>
 2D and 3D open source game engine
 
@@ -68,7 +108,7 @@ func getinput():
 
 
 
-<article>
+<article id=kparc >
 <h1>kparc</h1>
 <a href=http://kparc.com/>kparc</a>
 <pre>
@@ -111,9 +151,9 @@ trillion row databases <a href="q4">q4</a> and self-contained graphics <a href="
 
 </pre>
 
-</article><article>
+</article>
 
-
+<article id=krita >
 <h1>Krita - digital painting</h1>
 <pre><h2>user</h2> 
 <a href="http://krita.org">home</a>
@@ -137,8 +177,10 @@ clone git://anongit.kde.org/krita.git
 <a href="https://krita.org/irc/">freenode#krita</a> 
 <a href="https://phabricator.kde.org/project/query/all/">phabricator</a></pre>
 
-</article><article>
+</article>
 
+
+<article id=smalltalk >
 <h1>smalltalk</h1>
 <a href=http://squeak.org/>squeak</a> 
 <a href=http://www.smalltalk.gnu.org/>gnu</a>
@@ -158,8 +200,9 @@ y := self size + super size.
 
 A Complete syntax example from&nbsp; <a href="http://stephane.ducasse.free.fr/Web/BotsInc/ExtraChapter-Syntax.pdf">pdf</a>
 
-</article><article>
+</article>
 
+<article id=watts >
 <h1>Alan Watts</h1>
 
 <blockquote>The only way to make sense out of change is to plunge into it, move with it, and join the dance.</blockquote>
