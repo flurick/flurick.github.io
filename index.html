@@ -21,8 +21,9 @@ article{
 	overflow: scroll;
 	font-size: 2vw;
 	padding: 1ch;
+	display: none;
 }
-article:focus{
+article:focus, article:target{
 	display: block;
 }
 
@@ -34,7 +35,7 @@ nav ul {
 	background: wheat;
 	opacity: 0.5;
 	padding: 2ch;
-    position: fixed;
+    position: absolute;
     right: 0;
     text-align: right;
     list-style: none;
