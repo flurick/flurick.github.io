@@ -15,32 +15,26 @@ body,html{
 	background: wheat;
 }
 article{
-	height: 100%;
-	width: 100%;
-	font-size: 2vw;
-	padding: 1ch;
-
-	position: absolute;
+	display: inline-block;
+	width: 60ch;
 	overflow: scroll;
 	transition-duration: 1s;
-	opacity: 0;
-	left: -100%;
+	background: rgba(0,0,0, 0.1);
+    margin: 1ch;
 }
-article:focus, article:target{
-	top: 0;
-	left: 0;
-	opacity: 1;
+a {
+    color: #059;
+    text-decoration: none;
 }
-
 h1,h2,h3,h4,h5,h6{
-	font-size: 4vw;
+	-font-size: 4vw;
 	text-transform: uppercase;
 }
 nav ul {
 	background: wheat;
 	opacity: 0.5;
 	padding-right: 2ch;
-    position: absolute;
+    position: fixed;
     right: 0;
     text-align: right;
     list-style: none;
@@ -48,6 +42,10 @@ nav ul {
     line-height: 44px;
     text-transform: uppercase;
     z-index: 1;
+}
+img {
+    width: 100%;
+    -border-radius: 8px;
 }
 </style>
 
@@ -67,13 +65,14 @@ nav ul {
 
 <article id=croquet>
 <h1><a href=https://en.wikipedia.org/wiki/Croquet_Project>Croquet - shared 3D worlds</a></h1>
-
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Multi-user_text_editing_in_3D.jpg">
 </article>
 
 <article id=draw>
 <h1>Draw</h1>
 <a href=https://vimeo.com/64895205>Stop Drawing Dead Fish <br> Bret Victor</a>
 <hr>
+<img src="https://upload.wikimedia.org/wikipedia/en/7/7b/Sketchpad-Apple.jpg">
 <a href=https://en.wikipedia.org/wiki/Sketchpad>Sketchpad (Robot Draftsman) <br> Ivan Sutherland</a>
 <hr>
 <a href=https://www.ted.com/talks/alan_kay_shares_a_powerful_idea_about_ideas>Powerful idea about ideas <br> Alan Kay</a>
