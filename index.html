@@ -17,8 +17,7 @@
 	}
 	.articles{
 		position: relative;
-		height: 100%;    
-		padding: 1ch;
+		height: 100%;   
 		margin-right: 30vw;
 	}
 
@@ -42,32 +41,50 @@
 		text-decoration: none;
 		border-bottom: 1px solid rgba(0,0,0, 0.2)
 	}
+	a:visited{
+		-color: #f0f
+	}
+	p, blockquote{
+		padding: 1ch 0;
+	}
 	h1,h2,h3,h4,h5,h6{
 		text-transform: uppercase;
 		color: black;
 		font-weight: bold;
 	}
-	h1 { position: sticky; top: -10px;  }
+	h1 { position: sticky; top: -12px; }
 	h2 { position: sticky; top: 5px;	}
 	nav {
-		padding: 1ch;
-		/* top: 50%; */
-		line-height: 44px;
-		text-transform: uppercase;
-		right: 0;
-		position: absolute;
+	    position: fixed;
 	    display: inline-block;
-		width: 30vw;
-		height: 100%;
-		box-shadow: 0 0 2vw rgba(0,0,0, 0.1);
-		z-index: 2;
+	    padding: 1ch;
+	    line-height: 2em;
+	    text-transform: uppercase;
+	    right: 0;
+	    width: 30vw;
+	    height: 100%;
+	    box-shadow: 0 0 2vw rgba(0,0,0, 0.1);
+	    z-index: 2;
+	    overflow-x: scroll;
+	    
+	    /*dark inset*/
+	    box-shadow: inset 0 0 3vw rgba(0,0,0, 0.8);
+	    background: #293338;
+	    color: white;
 	}
 	nav ul{
 	    list-style: none;
 	}
+	nav a, nav h1{
+		color: #eee;
+	    line-height: 2em;
+	}
+	nav a:visited, nav h1{
+		opacity: 0.3;
+	}
 	img {
 	    width: 100%;
-	    border-radius: 8px;
+	    -border-radius: 8px;
 	}
 	hr {
 	    border: 0;
@@ -76,14 +93,12 @@
 	    width: 50%;
 	    margin: 1ch auto;
 	}
-	p, blockquote{
-		padding: 2ch;
-	}
 	pre {
 	    background: #eee;
-	    
-	    padding: 2ch 4ch;
-	    border-radius: 4px;
+	    margin: 0;
+	    padding: 2ch 0;
+	    -border-radius: 4px;
+	    box-sizing: box-padding;
 	}
 </style>
 
@@ -121,25 +136,24 @@
 
 <article id=papert>
 <h1>Papert</h1>
-<p>A better understanding of everything, including your self. (15 minutes in)</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZG9cYhekB8A&start=904" frameborder="0" allowfullscreen></iframe>
+<p>A better understanding of everything, including your self. <a href=https://www.youtube.com/watch?v=ZG9cYhekB8A>
+(15 minutes in)</a></p>
 </article>
 
 <article id=draw>
-<h1>Draw</h1>
-<p>
-<a href=https://vimeo.com/64895205>Stop Drawing Dead Fish by Bret Victor</a>
-</p>
+	<h1>Draw</h1>
+	<p>
+	<a href=https://vimeo.com/64895205>Stop Drawing Dead Fish by Bret Victor</a>
+	</p>
 
-<p>
-<a href=https://en.wikipedia.org/wiki/Sketchpad>Sketchpad (Robot Draftsman) <br> Ivan Sutherland</a>
-<img src="https://upload.wikimedia.org/wikipedia/en/7/7b/Sketchpad-Apple.jpg">
-</p>
+	<p>
+	<a href=https://en.wikipedia.org/wiki/Sketchpad>Sketchpad (Robot Draftsman) <br> Ivan Sutherland</a>
+	<img src="https://upload.wikimedia.org/wikipedia/en/7/7b/Sketchpad-Apple.jpg">
+	</p>
 
-<p>
-<a href=https://www.ted.com/talks/alan_kay_shares_a_powerful_idea_about_ideas>Powerful idea about ideas <br> Alan Kay</a>
-</p>
-
+	<p>
+	<a href=https://www.ted.com/talks/alan_kay_shares_a_powerful_idea_about_ideas>Powerful idea about ideas <br> Alan Kay</a>
+	</p>
 </article>
 
 
