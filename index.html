@@ -2,90 +2,89 @@
 <meta charset="utf-8">
 
 <style type="text/css">
-*{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	outline: 0;
-	line-height: 1.5em;
-	font-size: 18pt;
-	overflow: hidden;
-}
-body,html{
-	height: 100%;
-	width: 100%;
-}
-.articles{
-	position: relative;
-	height: 100%;    
-	padding: 1ch;
-	margin-right: 20vw;
-}
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		outline: 0;
+		letter-spacing: 0.1em;	
+		line-height: 1.5em;
+		font-size: 18pt;
+	}
+	body,html{
+		height: 100%;
+		width: 100%;
+	}
+	.articles{
+		position: relative;
+		height: 100%;    
+		padding: 1ch;
+		margin-right: 30vw;
+	}
 
-/*single*/
-article{
-	position: absolute;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-}
-article:target{
-	z-index: 1;
-	background: rgba(255,255,255, 0.93);
-}
+	/*single*/
+	article{
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		background: white;
+	}
+	article:target{
+		z-index: 1;
+	}
 
 
 
-a {
-	color: #059;
-	text-decoration: none;
-	border-bottom: 1px solid rgba(0,0,0, 0.2)
-}
-h1,h2,h3,h4,h5,h6{
-	text-transform: uppercase;
-	color: black;
-	font-weight: bold;
-}
-h1 { position: sticky; top: -10px;	}
-h2 { position: sticky; top: 5px;	}
-nav {
-	padding: 1ch;
-	/* top: 50%; */
-	line-height: 44px;
-	text-transform: uppercase;
-
-	position: absolute;
-    display: inline-block;
-	width: 20vw;
-	height: 100%;
-	right: 0;
-	box-shadow: 0 0 2vw rgba(0,0,0, 0.1);
-	z-index: 2;
-}
-nav ul{
-    list-style: none;
-}
-img {
-    width: 100%;
-    border-radius: 8px;
-}
-hr {
-    border: 0;
-    height: 1px;
-    background: black;
-    width: 50%;
-    margin: 1ch auto;
-}
-p, blockquote{
-	padding: 2ch;
-}
-pre {
-    background: #eee;
-    
-    padding: 2ch 4ch;
-    border-radius: 4px;
-}
+	a {    
+		color: #059;
+		text-decoration: none;
+		border-bottom: 1px solid rgba(0,0,0, 0.2)
+	}
+	h1,h2,h3,h4,h5,h6{
+		text-transform: uppercase;
+		color: black;
+		font-weight: bold;
+	}
+	h1 { position: sticky; top: -10px;  }
+	h2 { position: sticky; top: 5px;	}
+	nav {
+		padding: 1ch;
+		/* top: 50%; */
+		line-height: 44px;
+		text-transform: uppercase;
+		right: 0;
+		position: absolute;
+	    display: inline-block;
+		width: 30vw;
+		height: 100%;
+		box-shadow: 0 0 2vw rgba(0,0,0, 0.1);
+		z-index: 2;
+	}
+	nav ul{
+	    list-style: none;
+	}
+	img {
+	    width: 100%;
+	    border-radius: 8px;
+	}
+	hr {
+	    border: 0;
+	    height: 1px;
+	    background: black;
+	    width: 50%;
+	    margin: 1ch auto;
+	}
+	p, blockquote{
+		padding: 2ch;
+	}
+	pre {
+	    background: #eee;
+	    
+	    padding: 2ch 4ch;
+	    border-radius: 4px;
+	}
 </style>
 
 
@@ -102,6 +101,10 @@ pre {
 <li><a href="#krita">krita</a></li>
 <li><a href="#smalltalk">smalltalk</a></li>
 <li><a href="#watts">watts</a></li>
+<li><a href="#wrong">all is wrong</a></li>
+<li><a href="#ok">all is ok</a></li>
+<li><a href="#badapp">Why bad programs</a></li>
+<li><a href="#chrods">Key chords</a></li>
 </ul>
 
 <h1>external</h1>
@@ -138,6 +141,7 @@ pre {
 </p>
 
 </article>
+
 
 
 <article id=godot >
@@ -277,7 +281,9 @@ A Complete syntax example from&nbsp; <a href="http://stephane.ducasse.free.fr/We
 
 </article>
 
-<article id=watts >
+
+
+<article id=watts>
 	<h1>Alan Watts</h1>
 
 	<blockquote>The only way to make sense out of change is to plunge into it, move with it, and join the dance.</blockquote>
@@ -287,7 +293,7 @@ A Complete syntax example from&nbsp; <a href="http://stephane.ducasse.free.fr/We
 	</br>
 
 	<blockquote>
-	Seeing that there isnt really anything we can do, to imporove our self or to improve the world. If we realize that that is so it gives us a breather, in the course of which we may simply watch what is going on, watch what happends ... and don't be in a hurry to think you know what it is.
+	Seeing that there is not really anything we can do, to improve our self or to improve the world. If we realize that that is so it gives us a breather, in the course of which we may simply watch what is going on, watch what happends ... and don't be in a hurry to think you know what it is.
 	</blockquote>
 
 	<p>
@@ -296,7 +302,9 @@ A Complete syntax example from&nbsp; <a href="http://stephane.ducasse.free.fr/We
 
 </article>
 
-<article>
+
+
+<article id=badapp>
 	<h1>Reasons of bad open software</h1>
 	<p>Some sort of summary of <a href="http://www.dougengelbart.org/events/vannevar-bush-symposium.html">Vannevar symposium 1995</a>.
 	</p>
@@ -309,39 +317,42 @@ A Complete syntax example from&nbsp; <a href="http://stephane.ducasse.free.fr/We
 	It takes some will power to work on your own projects, and even the slightest possibility of you not having to do it your self reduces the possisbility of you getting anything done, since you might not have to.
 	</p>
 	<p>
-	Getting into the mind set that it's all on you might work for a while, 
-	until you have given yuor everyting expecting something in return. 
-	Surprise! It's a process not a project, there is no end unless you say so, but you wont since you are a good person and heroes do not leave things half done, right?
+	Getting into the mindset that it is all on you might work for a while, 
+	until you have given your everything expecting something in return. 
+	Surprise! It's a process not a project, there is no end unless you say so, but you never would, since you are a good person and heroes do not leave things half done, right?
 	</p>
 	<p>
 	Does Stallman finish his projects?
 	</p>
 </article>
 
-<article>
-	<h1>Wrong from the start</h1>
-	<p>
-	Let us make a computer for children since they both will be the average user when they have grown up with it, and kids are very eager to learn how they fit in the world.
-	To bad we tought they needed something simple and naive like overlapping windows, that is not true.
-	</p>
-	<p>
-	It's easy to be angry at what we dont do, but not helpful. If there is a better place to be we should tenderly guide our selfs there, the ones already there should keep looking for where to go next, but not forget to check in on the traveling group so they wont fall into the same pits that he has seen, fallen in, and escaped.  
-	</p>
-</article>
 
-<article>
+
+<article id=chords>
 	<h2>Chords chains levels and groups</h2>
 	<p><a href="https://blog.xkcd.com/2007/08/14/mirrorboard-a-one-handed-keyboard-layout-for-the-lazy/comment-page-5/#comments">xkcd mirrorboard</a></p>
 </article>
 
-<article><h2>Everything is wrong and ok
-</h2>
-<p>
-That guy that was way beter then you in school in that one subject, is not working with that today. That one ide that would reduce stress globaly, is not understod by more then a few of us. Thecnology exist sthat can save time, paint maybe even life, but is not actually used. Thats not how our world works. If the perfect creature wandered our planet, it would probably get squased by an elefant. Lifes not fair, so why bother trying when the outcome is not relative to your eforts? 
-</p>
-<p>
-Do we have a choice?
-Isnt it enough we are alive!
-You can 
-</p>
+
+
+<article id=wrong>
+	<h1>Everything is wrong</h1>
+	<p>
+	Make a computer for children, since they both will be the normla user when they have grown up, and also, kids are very eager to learn how they fit in the world. Do they need something simple and naive like overlapping windows, maybe not.
+	</p>
+	<p>
+	It's easy to get angry at what we did not do, but not helpful. If there is a better place to be we should guide ourself there, the ones already there might even keep a lookout for where to go next, and help the rest of us to avoid falling into the same pits that they already have explored closer then they ever wanted to.
+	</p>
+	
+</article>
+<article id=ok>
+	<h2>Everything is OK</h2>
+	<p>
+	That guy that was way better then you in school in that one subject is not working with that today, it did not matter that he was once good at it compared the his peers. That one idea that could reduce stress globaly is not understod by more then a few. Thecnology exist that can save time, pain and maybe even life, but is not actually used. That is not how our world works. If the perfect creature wandered our planet, it would probably get squased by an elefant. Life is not "fair", so why bother trying when the outcome is not relative to your efforts? 
+	</p>
+	<p>
+	Do we have a choice?
+	Is it not enough being alive?
+	You can...
+	</p>
 </article>
