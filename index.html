@@ -1,56 +1,93 @@
 <!DOCYTPE html>
 <meta charset="utf-8">
 
-<style type="text/css">
+<style type="text/cs">
 *{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	outline: 0;
-	line-height: 1.5em;
+	line-height: 1.5em
 }
 body,html{
 	height: 100%;
 	width: 100%;
-	background: wheat;
+	display: flex;
+	flex-flow: row;
+}
+.articles{
+	max-width: 65ch;
+	height: 100%;    
+	padding: 1ch;
 }
 article{
-	display: inline-block;
-	width: 60ch;
-	overflow: scroll;
-	transition-duration: 1s;
-	background: rgba(0,0,0, 0.1);
-    margin: 1ch;
+	transition-duration: 1s
+	margin-bottom: 10ch;
 }
+
+
+/*single*/
+article{
+	position: absolute;
+	 top:0;
+	 height: 100%;
+	 background: rgba(255,255,255, 0.8);
+}
+article:target{
+	z-index: 1;
+}
+
+
+
 a {
-    color: #059;
-    text-decoration: none;
+	color: #059;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(0,0,0, 0.2)
 }
 h1,h2,h3,h4,h5,h6{
-	-font-size: 4vw;
-	text-transform: uppercase;
+	text-transform: uppercase
+	color: black
+	font-weight: bold;
 }
-nav ul {
-	background: wheat;
-	opacity: 0.5;
-	padding-right: 2ch;
-    position: fixed;
-    right: 0;
-    text-align: right;
+h1 { position: sticky; top: -10px;	}
+h2 { position: sticky; top: 5px;	}
+nav 
+	padding: 2ch
+	text-align: right;
+	/* top: 50%; */
+	line-height: 44px;
+	text-transform: uppercase;
+	z-index: 1;
+}
+nav ul{
     list-style: none;
-    /* top: 50%; */
-    line-height: 44px;
-    text-transform: uppercase;
-    z-index: 1;
 }
 img {
     width: 100%;
-    -border-radius: 8px;
+    border-radius: 8px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: black;
+    width: 50%;
+    margin: 1ch auto;
+}
+p, blockquote{
+	padding: 2ch;
+}
+pre {
+    background: #eee;
+    
+    padding: 2ch 4ch;
+    border-radius: 4px;
 }
 </style>
 
 
+
 <nav>
+<h1>Articles</h1>
 <ul>
 <li><a href="#croquet">croquet</a></li>
 <li><a href="#draw">draw</a></li>
@@ -60,32 +97,48 @@ img {
 <li><a href="#smalltalk">smalltalk</a></li>
 <li><a href="#watts">watts</a></li>
 </ul>
+<h1>Interesting Pages</h1>
+<ul>
+<li><a href=http://wiki.polyfra.me>3d wiki</a></li>
+<li><a href=http://www.chromeexperiments.com>chrome experiments</a></li>
+<li><a href=http:/cursors.me>co-op maze</a></li>
+</ul>
 </nav>
 
 
-<article id=croquet>
-<h1><a href=https://en.wikipedia.org/wiki/Croquet_Project>Croquet - shared 3D worlds</a></h1>
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Multi-user_text_editing_in_3D.jpg">
+
+<div class=articles>
+
+<article>
+<h1>Papert</h1>
+<p>A better understanding of everything, including your self. (15 minutes in)</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZG9cYhekB8A&start=904" frameborder="0" allowfullscreen></iframe>
 </article>
 
 <article id=draw>
 <h1>Draw</h1>
-<a href=https://vimeo.com/64895205>Stop Drawing Dead Fish <br> Bret Victor</a>
-<hr>
-<img src="https://upload.wikimedia.org/wikipedia/en/7/7b/Sketchpad-Apple.jpg">
+<p>
+<a href=https://vimeo.com/64895205>Stop Drawing Dead Fish by Bret Victor</a>
+</p>
+
+<p>
 <a href=https://en.wikipedia.org/wiki/Sketchpad>Sketchpad (Robot Draftsman) <br> Ivan Sutherland</a>
-<hr>
+<img src="https://upload.wikimedia.org/wikipedia/en/7/7b/Sketchpad-Apple.jpg">
+</p>
+
+<p>
 <a href=https://www.ted.com/talks/alan_kay_shares_a_powerful_idea_about_ideas>Powerful idea about ideas <br> Alan Kay</a>
+</p>
 
 </article>
 
 
 <article id=godot >
-<a href="http://godotengine.org/"><h1>Godot</h1></a>
-2D and 3D open source game engine
-
+<h1>Godot</h1>
+<p>
+<a href="http://godotengine.org/">2D and 3D open source game engine.</a>
 Add an object to the tree, add a script to the object like:
-
+</p>
 <pre>
 extends SomeClass
 
@@ -110,6 +163,14 @@ func dosomething():
 func getinput():
 	...
 </pre>
+</article>
+
+
+
+<article id=croquet>
+<h1>Croquet - shared 3D worlds</h1>
+<a href=https://en.wikipedia.org/wiki/Croquet_Project>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Multi-user_text_editing_in_3D.jpg"></a>
 </article>
 
 
@@ -161,28 +222,29 @@ trillion row databases <a href="q4">q4</a> and self-contained graphics <a href="
 
 <article id=krita >
 <h1>Krita - digital painting</h1>
-<pre><h2>user</h2> 
+<h2>user</h2> 
 <a href="http://krita.org">home</a>
 <a href="http://docs.krita.org">docs</a> 
 
 <h2>dev </h2>
+<p>
 (2.x stable with qt4, 3.x with qt5 is git master and "next")
-clone git://anongit.kde.org/krita.git
-<a href="https://bugs.kde.org/buglist.cgi?quicksearch=Product%3Akrita">bug list</a> 
-<a href="https://bugs.kde.org/component-report.cgi?product=krita">bug table</a> 
-<a href="https://quickgit.kde.org/?p=krita.git">git</a> 
-<a href="https://github.com/KDE/krita">git mirror</a> 
-<a href="https://community.kde.org/Krita">dev wiki</a> 
-<a href="https://community.kde.org/Calligra/Building/2">compiling</a> 
-<a href="http://davidrevoy.com/article193/guide-building-krita-on-linux-for-cats">cat guide</a> 
+<pre>clone git://anongit.kde.org/krita.git</pre>
+<a href="https://bugs.kde.org/buglist.cgi?quicksearch=Product%3Akrita">bug list</a>,
+<a href="https://bugs.kde.org/component-report.cgi?product=krita">bug table</a>,
+<a href="https://cgit.kde.org/krita.git/">git</a>,
+<a href="https://github.com/KDE/krita">git mirror</a>,
+<a href="https://community.kde.org/Krita">dev wiki</a>,
+<a href="https://community.kde.org/Calligra/Building/2">compiling</a>,
+<a href="http://davidrevoy.com/article193/guide-building-krita-on-linux-for-cats">cat guide</a>,
 <a href="http://api.kde.org/bundled-apps-api/calligra-apidocs/krita/html/index.html">api</a> 
 
 <h2>com</h2> 
-<a href="http://news.gmane.org/gmane.comp.kde.devel.krita">mailing list</a> 
-<a href="https://forum.kde.org/viewforum.php?f=136">forum</a> 
-<a href="https://krita.org/irc/">freenode#krita</a> 
-<a href="https://phabricator.kde.org/project/query/all/">phabricator</a></pre>
-
+<a href="http://news.gmane.org/gmane.comp.kde.devel.krita">mailing list</a>,
+<a href="https://forum.kde.org/viewforum.php?f=136">forum</a>,
+<a href="https://krita.org/irc/">freenode#krita</a>,
+<a href="https://phabricator.kde.org/project/query/all/">phabricator</a>
+</p>
 </article>
 
 
@@ -209,14 +271,70 @@ A Complete syntax example from&nbsp; <a href="http://stephane.ducasse.free.fr/We
 </article>
 
 <article id=watts >
-<h1>Alan Watts</h1>
+	<h1>Alan Watts</h1>
 
-<blockquote>The only way to make sense out of change is to plunge into it, move with it, and join the dance.</blockquote>
-</br>
+	<blockquote>The only way to make sense out of change is to plunge into it, move with it, and join the dance.</blockquote>
+	</br>
 
-<blockquote>You and I are all as much continuous with the physical universe as a wave is continuous with the ocean.</blockquote>
-</br>
+	<blockquote>You and I are all as much continuous with the physical universe as a wave is continuous with the ocean.</blockquote>
+	</br>
 
-<blockquote>
-Seeing that there isnt really anything we can do, to imporove our self or to improve the world. If we realize that that is so it gives us a breather, in the course of which we may simply watch what is going on, watch what happends ... and don't be in a hurry to think you know what it is.
-</blockquote>
+	<blockquote>
+	Seeing that there isnt really anything we can do, to imporove our self or to improve the world. If we realize that that is so it gives us a breather, in the course of which we may simply watch what is going on, watch what happends ... and don't be in a hurry to think you know what it is.
+	</blockquote>
+
+	<p>
+	<a href="https://www.youtube.com/results?search_query=Alan+Watts">Youtube</a>
+	</p>
+
+</article>
+
+<article>
+	<h1>Reasons of bad open software</h1>
+	<p>Some sort of summary of <a href="http://www.dougengelbart.org/events/vannevar-bush-symposium.html">Vannevar symposium 1995</a>.
+	</p>
+
+	<p>
+	If you sell closed sourced programs, only you can fix it.
+	If you make open sourced progamms, you trust the user to fix it.
+	if you do not trust your user to work on it, 
+	you might grow to dislike them to the point of not fixing it yourself.
+	It takes some will power to work on your own projects, and even the slightest possibility of you not having to do it your self reduces the possisbility of you getting anything done, since you might not have to.
+	</p>
+	<p>
+	Getting into the mind set that it's all on you might work for a while, 
+	until you have given yuor everyting expecting something in return. 
+	Surprise! It's a process not a project, there is no end unless you say so, but you wont since you are a good person and heroes do not leave things half done, right?
+	</p>
+	<p>
+	Does Stallman finish his projects?
+	</p>
+</article>
+
+<article>
+	<h1>Wrong from the start</h1>
+	<p>
+	Let us make a computer for children since they both will be the average user when they have grown up with it, and kids are very eager to learn how they fit in the world.
+	To bad we tought they needed something simple and naive like overlapping windows, that is not true.
+	</p>
+	<p>
+	It's easy to be angry at what we dont do, but not helpful. If there is a better place to be we should tenderly guide our selfs there, the ones already there should keep looking for where to go next, but not forget to check in on the traveling group so they wont fall into the same pits that he has seen, fallen in, and escaped.  
+	</p>
+</article>
+
+<article>
+	<h2>Chords chains levels and groups</h2>
+	<p><a href="https://blog.xkcd.com/2007/08/14/mirrorboard-a-one-handed-keyboard-layout-for-the-lazy/comment-page-5/#comments">xkcd mirrorboard</a></p>
+</article>
+
+<article><h2>Everything is wrong and ok
+</h2>
+<p>
+That guy that was way beter then you in school in that one subject, is not working with that today. That one ide that would reduce stress globaly, is not understod by more then a few of us. Thecnology exist sthat can save time, paint maybe even life, but is not actually used. Thats not how our world works. If the perfect creature wandered our planet, it would probably get squased by an elefant. Lifes not fair, so why bother trying when the outcome is not relative to your eforts? 
+</p>
+<p>
+Do we have a choice?
+Isnt it enough we are alive!
+You can 
+</p>
+</article>
