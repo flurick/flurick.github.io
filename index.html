@@ -2,111 +2,109 @@
 <meta charset="utf-8">
 
 <style type="text/css">
-	*{
-		padding: 0;
-		margin: 0;
-		box-sizing: border-box;
-		outline: 0;
-		-letter-spacing: 0.1em;	
-		line-height: 1.5em;
-		font-size: 18pt;
-	}
-	body,html{
-		height: 100%;
-		width: 100%;
-	}
-	.articles{
-		position: relative;
-		height: 100%;   
-		margin-right: 30vw;
-	}
 
-	/*single*/
-	article{
-		position: absolute;
-		top: 0;
-		height: 100%;
-		width: 100%;
-		overflow: hidden;
-		background: white;
-	}
-	article:target{
-		z-index: 1;
-	}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
-	a {    
-		color: #059;
-		text-decoration: none;
-		border-bottom: 1px solid rgba(0,0,0, 0.2)
-	}
-	a:visited{
-		-color: #f0f
-	}
-	p, blockquote{
-		padding: 1ch 0;
-	}
-	h1,h2,h3,h4,h5,h6{
-		text-transform: uppercase;
-		color: black;
-		font-weight: bold;
-	}
-	h1 { position: sticky; top: -12px; }
-	h2 { position: sticky; top: 5px;	}
-	nav {
-	    position: fixed;
-	    display: inline-block;
-	    padding: 1ch;
-	    line-height: 2em;
-	    text-transform: uppercase;
-	    right: 0;
-	    width: 30vw;
-	    height: 100%;
-	    box-shadow: 0 0 2vw rgba(0,0,0, 0.1);
-	    z-index: 2;
-	    overflow-x: scroll;
-	    
-	    /*dark inset*/
-	    box-shadow: inset 0 0 3vw rgba(0,0,0, 0.8);
-	    background: #293338;
-	    color: white;
-	}
-	nav ul{
-	    list-style: none;
-	}
-	nav a, nav h1{
-		color: #eee;
-	    line-height: 3em;
-	    display: block; /* firefox >:( *//
-	}
-	nav a:visited, nav h1{
-		opacity: 0.3;
-	}
-	img {
-	    width: 100%;
-	    -border-radius: 8px;
-	}
-	hr {
-	    border: 0;
-	    height: 1px;
-	    background: black;
-	    width: 50%;
-	    margin: 1ch auto;
-	}
-	pre {
-	    background: #eee;
-	    margin: 0;
-	    padding: 2ch 0;
-	    -border-radius: 4px;
-	    box-sizing: box-padding;
-	}
+body{
+	background: whitesmoke;
+    max-width: 80ch;
+    padding: 16pt;
+    margin: auto;
+    min-width: 500px;
+}
+
+article {
+    background: white;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    padding: 26pt;
+    margin-bottom: 64pt;
+    box-shadow: 10px 10px 10px rgba(0,0,0, 0.05);
+}
+
+nav ul {
+
+    column-count: 4;
+	column-width: 8ch;
+
+    width: 100%;
+    background: rgba(0,0,0, 0.05);
+    list-style: none;
+    border-radius: 999px;
+    padding: 27pt;
+    text-align: center;
+    box-shadow: inset 0 5px 5px rgba(0,0,0, 0.3);
+    margin-bottom: 64pt;
+    position: relative;
+}
+
+nav h1 {
+
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 18pt;
+    padding: 0;
+    position: absolute;
+	top: -6px;
+	margin-left: -27pt;
+    text-shadow: 0px 3px 3px grey;
+    text-align: center;
+    width: inherit;
+    font-family: sans;
+
+}
+
+a {
+
+    color: #376bba;
+    text-decoration: none;
+
+}
+
+body > h1{
+    text-align: center;
+    color: #e0e0e0;
+    margin: 32pt;
+}
+
+article h1{
+    text-align: center;
+    color: #e0e0e0;
+}
+
+hr {
+    border: 0;
+    height: 50px;
+    width: 100%;
+    background-image: url("div.png");
+    display: block;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: round;
+}
+
+p {
+    line-height: 1.6em;
+    text-indent: 12pt;
+}
+
+nav a {
+    text-transform: capitalize;
+}
+
+
 </style>
 
 
+<h1>Stack o ideas</h1>
 
 <nav>
-<p>Stack of others ideas</p>
-<h1>Index</h1>
 <ul>
+<h1>this page</h1>
 <li><a href="#papert">papert</a></li>
 <li><a href="#croquet">croquet</a></li>
 <li><a href="#draw">draw</a></li>
@@ -118,11 +116,11 @@
 <li><a href="#wrong">all is wrong</a></li>
 <li><a href="#ok">all is ok</a></li>
 <li><a href="#badapp">Why bad programs</a></li>
-<li><a href="#chrods">Key chords</a></li>
+<li><a href="#chords">Key chords</a></li>
 </ul>
 
-<h1>external</h1>
 <ul>
+<h1>good stuff</h1>
 <li><a href=http://wiki.polyfra.me>3d wiki</a></li>
 <li><a href=http://www.chromeexperiments.com>chrome experiments</a></li>
 <li><a href=http:/cursors.me>co-op maze</a></li>
@@ -137,10 +135,7 @@
 <article id=potential>
 <h1>Papert</h1>
 <p>By focusing our efforts, we lose out on the enjoyment of multiplicity – yet our society becomes overall far wealthier and better supplied with the goods it needs.</p>
-</article>	
-	
-<article id=papert>
-<h1>Papert</h1>
+<hr>
 <p>A better understanding of everything, including your self. <a href=https://www.youtube.com/watch?v=ZG9cYhekB8A>
 (15 minutes in)</a></p>
 </article>
@@ -265,7 +260,7 @@ trillion row databases <a href="q4">q4</a> and self-contained graphics <a href="
 
 
 <article id=smalltalk >
-<h1>smalltalk</h1>
+<h1>Smalltalk</h1>
 <a href=http://squeak.org/>squeak</a> 
 <a href=http://www.smalltalk.gnu.org/>gnu</a>
 <a href=http://pharo.org/>pharo</a>
@@ -334,8 +329,8 @@ A Complete syntax example from&nbsp; <a href="http://stephane.ducasse.free.fr/We
 
 
 <article id=chords>
-	<h2>Chords chains levels and groups</h2>
-	<p><a href="https://blog.xkcd.com/2007/08/14/mirrorboard-a-one-handed-keyboard-layout-for-the-lazy/comment-page-5/#comments">xkcd mirrorboard</a></p>
+	<h1>Chords chains levels and groups</h1>
+	<p><a href="https://blog.xkcd.com/2007/08/14/mirrorboard-a-one-handed-keyboard-layout-for-the-lazy/comment-page-5/#comments"><img src="https://i1.wp.com/imgs.xkcd.com/blag/mirrorboard450.png"></p>
 </article>
 
 
@@ -351,7 +346,7 @@ A Complete syntax example from&nbsp; <a href="http://stephane.ducasse.free.fr/We
 	
 </article>
 <article id=ok>
-	<h2>Everything is OK</h2>
+	<h1>Everything is OK</h1>
 	<p>
 	That guy that was way better then you in school in that one subject is not working with that today, it did not matter that he was once good at it compared the his peers. That one idea that could reduce stress globaly is not understod by more then a few. Thecnology exist that can save time, pain and maybe even life, but is not actually used. That is not how our world works. If the perfect creature wandered our planet, it would probably get squased by an elefant. Life is not "fair", so why bother trying when the outcome is not relative to your efforts? 
 	</p>
