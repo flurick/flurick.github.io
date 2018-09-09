@@ -1,0 +1,286 @@
+
+
+<meta charset="utf-8">
+<header>
+  <input type="text" id="page" list="relatedsubs">
+  <datalist id=relatedsubs>
+	<option value=nameofsubreddit... />
+  </datalist>
+  <input id="date" type=date oninput="searchday()"> 
+<!--
+  -
+  <input id="date2" type=date oninput="searchday()" disabled="true">
+-->
+
+<div class=radio> 
+<input id=d type=radio name=filter /><label for=d>Filter</label><input id=a type=radio name=filter /><label for=a>F</label><input id=b type=radio name=filter /><label for=b>M</label><input id=c type=radio name=filter /><label for=c>S</label>
+</div>
+
+  <script>
+
+	searchday()
+
+	var tagexpression = /\([[^]+]\)/
+	var expr_gender = /^[mfa]+4?[mfa]?$/i
+	var expr_scriptfill = /script fill/i
+	var expr_script = /script offer/i
+	var expr_request = /^request$/i
+
+	var header = document.querySelector('header');
+
+	function searchday() {
+
+	  var requestURL = "https://api.pushshift.io/reddit/search/submission/?subreddit="+document.getElementById("page").value+"&sort=desc&sort_type=created_utc&after="+document.getElementById("date").valueAsNumber/1000+"&before="+(document.getElementById("date").valueAsNumber/1000+86400)+"&size=100"
+	  console.log(requestURL)
+	  var request = new XMLHttpRequest()
+	  request.open('GET', requestURL)
+	  request.responseType = 'json'
+	  request.send()
+	  
+	  request.onload = function() {
+
+		var jsonObj = request.response
+		var post = jsonObj['data'];
+
+		var section = document.createElement("section")
+		document.body.appendChild(section)
+
+		var datelabel = document.createElement('a')
+		datelabel.href = requestURL
+		datelabel.classList.add("datelabel")
+		section.appendChild(datelabel)
+
+		var daycommentamount = 0
+		var tagrank = {}
+
+		for (var i = 0; i < post.length; i++) {
+
+			var myArticle = document.createElement('article');
+			var myPara1 = document.createElement('a');
+			var myPara2 = document.createElement('p');
+			var myPara3 = document.createElement('p');
+			var myList = document.createElement('ul');
+
+			var tags = post[i].title.split(/[\[\]]/).filter(str => str.trim().length > 0)
+
+			myPara1.textContent = post[i].title.replace(/\[.*?\]/gi, '')
+			if (myPara1.textContent.trim() == "") {myPara1.textContent = "-"}
+			myPara1.href = post[i].full_link
+			myPara1.title = post[i].title
+
+			myPara2.classList.add("tag")
+
+			myPara3.classList.add("number")
+			myPara3.textContent = post[i].num_comments
+			daycommentamount += post[i].num_comments
+
+			var basetagfound = false
+
+			//console.log(tags)
+			for (var j = 0; j < tags.length; j++) {
+				var tag = tags[j]
+				if (tag[0] == " ") continue //skip text outside tags that almost always starts with a space
+				var listItem = document.createElement('li')
+				listItem.textContent = tag
+				myList.appendChild(listItem)
+				if (tag.match(expr_request) != null) myPara1.classList.add("script")
+				if (tag.match(expr_gender) != null) myPara1.classList.add(tag[0])
+				if (tag.match(expr_script) != null) myPara1.classList.add("script")
+				if (tag.match(expr_request) == tag.match(expr_gender) == tag.match(expr_script) == null) myPara2.textContent = tag
+				if (!tag.match(expr_request) && !tag.match(expr_gender) && !tag.match(expr_script) && !tag.match(expr_scriptfill) && !basetagfound) {
+					myPara2.textContent = tag
+					basetagfound = true
+		  		}
+		  		tagrank[tag] += 1
+			}
+
+			myArticle.appendChild(myPara3)
+			myArticle.appendChild(myPara1)
+			myArticle.appendChild(myPara2)
+			//myArticle.appendChild(myList)
+
+			section.appendChild(myArticle)
+			window.scrollTo(0,document.body.scrollHeight);
+		}
+		datelabel.textContent = document.getElementById("date").value + " · " + daycommentamount + "💬 / " + post.length + "🎤"
+	}
+}
+
+</script>
+
+<style type="text/css">
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+*:focus{
+	outline: 0;
+	text-shadow: 0 0 4px black;
+}
+body{
+	background: black;
+	padding-top: 80px;
+	height: 90%;
+	white-space: nowrap;
+}
+header {
+	position: fixed;
+	background: rgb(26, 26, 27, 0.9);
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+	box-shadow: 0 0 24px rgba(0,0,0, 0.7);
+	opacity: 0.95;
+	color: white;
+	font-size: 17pt;
+	z-index: 10;
+}
+section {
+  width: 300px;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 10px;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 4px;
+  position: relative;
+  vertical-align: top;
+}
+.datelabel {
+  display: block;
+  text-align: center;    
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: rgb(26, 26, 27, 0.9);
+  box-shadow: 0 0 24px rgba(0,0,0, 0.7);
+}
+article {
+    display: flex;
+}
+article>*{
+  min-width: 3ex;
+  padding: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+a {
+  color: inherit;
+  font-family: Sans;
+  text-decoration: none;
+}
+.number {
+    text-align: center;
+}
+
+#date, #date2{
+  height: 24px;
+}
+
+.pulser {
+  opacity: 1;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  background: #beda91;
+  border-radius: 45%;
+  animation: pulse 3s infinite alternate;
+  vertical-align: top;
+}
+@keyframes pulse {
+  0%, 100% {
+	border-radius: 50%;
+  }
+  50% {
+	border-radius: 30%;
+  }
+}
+.hide{
+  opacity: 0;
+}
+
+.tab{
+	align-self: flex-end;
+}
+.tag {
+	font-family: Sans;
+	z-index: 1;
+	padding-left: 1ex;
+}
+
+body{
+  background: black;
+}
+section{
+  border-radius: 4px;
+  background: rgb(26, 26, 27);
+  color: rgb(129, 131, 132);
+  border-color: rgb(52, 53, 54);
+}
+a{
+  color: lightgrey;
+}
+a:visited{
+  color: #625b6b;
+}
+a.datelabel{
+  color: grey;
+}
+.m, .M{
+  background: linear-gradient(to right, #2b2971 0%,transparent 30%);
+}
+.f, .F{
+  background: linear-gradient(to right, #592044 0%,transparent 30%);
+}
+.script{
+  background: linear-gradient(to right, #46464a 0%,transparent 30%);
+}
+
+
+/* RADIO */
+.radio, .radio * {
+  user-select: none;
+  display: none;
+}
+.radio{
+  background: lightgrey;
+  display: inline-block;
+  border-radius: 999px;
+  padding: 1ex 0;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.radio input {
+  display: none;
+}
+.radio label {
+  padding: 2ex;
+  color: black;
+  cursor: pointer;
+  font-size: medium;
+}
+.radio #d:checked + label{
+  background: transparent;
+}
+.radio #a:checked+label{
+  background: red;
+}.radio #b:checked+label{
+  background: blue;
+}.radio #c:checked+label{
+  background: grey;
+}
+
+/* FILTER */
+
+.filter{
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  padding: 1ex 0;
+}
+
+</style>
