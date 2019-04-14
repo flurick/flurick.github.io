@@ -158,6 +158,8 @@ section {
   z-index: 5;
   background: rgb(26, 26, 27, 0.9);
   box-shadow: 0 0 24px rgba(0,0,0, 0.7);
+  height: 17px;
+  overflow: hidden;
 }
 article {
     display: flex;
@@ -174,9 +176,14 @@ a {
   text-decoration: none;
 }
 .number {
-    text-align: center;
+  text-align: center;
+  cursor: default;
 }
 
+#page {
+  height: 24px;
+  vertical-align: bottom;
+}
 #date, #date2{
   height: 24px;
 }
@@ -220,6 +227,7 @@ section{
   background: rgb(26, 26, 27);
   color: rgb(129, 131, 132);
   border-color: rgb(52, 53, 54);
+  scrollbar-color: rgb(129, 131, 132) transparent;
 }
 a{
   color: lightgrey;
