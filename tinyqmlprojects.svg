@@ -36,8 +36,8 @@
      inkscape:snap-page="true"
      inkscape:window-width="940"
      inkscape:window-height="792"
-     inkscape:window-x="936"
-     inkscape:window-y="255"
+     inkscape:window-x="1016"
+     inkscape:window-y="475"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata5">
@@ -383,10 +383,12 @@ wQIAmAkWAMBMsAAAZoIFADALgKP1JKOOQAkAAAAASUVORK5CYII=
        height="211.66667"
        width="158.75" />
     <a
-       id="a4584">
+       id="a4584"
+       xlink:href="https://github.com/flurick/flurick.github.io/raw/master/overlay"
+       style="fill:#ffffff;fill-opacity:0.00392157">
       <path
          onclick=""
-         style="fill:none;stroke:#0087ff;stroke-width:2.57875228;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:#ffffff;stroke:#0087ff;stroke-width:2.57875228;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:0.00392157"
          inkscape:connector-curvature="0"
          d="m 78.176338,252.69764 c 14.140705,0 22.001722,0 27.136062,-5.13433 5.13432,-5.13434 5.13432,-12.99536 5.13432,-27.13606 0,-14.14071 0,-22.00173 -5.13432,-27.13607 -5.13434,-5.13433 -12.995357,-5.13433 -27.136062,-5.13433 -14.140705,0 -22.001716,0 -27.136058,5.13433 -5.134331,5.13434 -5.134331,12.99536 -5.134331,27.13607 0,14.1407 0,22.00172 5.134331,27.13606 5.134342,5.13433 12.995353,5.13433 27.136058,5.13433 z"
          id="path4533" />
