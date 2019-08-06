@@ -10,12 +10,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="600"
-   height="800"
-   viewBox="0 0 158.75 211.66667"
+   width="800"
+   height="600"
+   viewBox="0 0 211.66667 158.75"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="tinyqmlprojects.svg">
   <defs
      id="defs2" />
@@ -26,19 +26,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="288.37028"
-     inkscape:cy="406.30232"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="322.18488"
+     inkscape:cy="277.74298"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      units="px"
      inkscape:snap-page="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="0"
-     inkscape:window-y="36"
-     inkscape:window-maximized="1"
+     inkscape:window-width="1269"
+     inkscape:window-height="1008"
+     inkscape:window-x="-7"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
      inkscape:snap-global="true"
      inkscape:snap-object-midpoints="true"
      inkscape:snap-center="true" />
@@ -58,44 +58,30 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="png"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(0,-52.916667)">
     <image
-       sodipodi:absref="/home/flu/Projects/flurick.github.io/bg.png"
+       sodipodi:absref="C:\Users\flu\Google Drive\All Godot Projects as of 2019\godots drone\flurick.github.io\bg.png"
        xlink:href="bg.png"
-       width="158.75"
-       height="211.93124"
+       width="211.66667"
+       height="158.75"
        preserveAspectRatio="none"
-       id="image4532"
-       x="0"
-       y="85.333298"
-       style="display:inline"
-       transform="translate(0,-85.333298)" />
+       id="image3728"
+       x="-1.4210855e-14"
+       y="52.916668" />
   </g>
   <g
      inkscape:label="svg links"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-85.333297)"
+     transform="translate(0,-138.24996)"
      style="display:inline">
-    <a
-       id="a4584"
-       xlink:href="https://github.com/flurick/RoundDesktopCorners/blob/master/overlay?raw=true"
-       style="fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       xlink:title="Click to download: A tiny QML project, for KDE plasma desktop, rounding the corners of the monitor/screen/desktop. (This is the binary file so it need to be marked &quot;executable&quot; to run). Remove the corners via the small icon of a dot by the clock/systemtray"
-       transform="matrix(0.36048176,0,0,0.31948721,105.02853,128.83689)">
-      <path
-         onclick=""
-         style="fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         inkscape:connector-curvature="0"
-         d="m 78.176338,252.69764 c 14.140705,0 22.001722,0 27.136062,-5.13433 5.13432,-5.13434 5.13432,-12.99536 5.13432,-27.13606 0,-14.14071 0,-22.00173 -5.13432,-27.13607 -5.13434,-5.13433 -12.995357,-5.13433 -27.136062,-5.13433 -14.140705,0 -22.001716,0 -27.136058,5.13433 -5.134331,5.13434 -5.134331,12.99536 -5.134331,27.13607 0,14.1407 0,22.00172 5.134331,27.13606 5.134342,5.13433 12.995353,5.13433 27.136058,5.13433 z"
-         id="path4533" />
-    </a>
     <a
        id="a4584-3"
        xlink:href="https://github.com/flurick/RoundDesktopCorners/blob/master/overlay?raw=true"
        style="display:inline;fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        xlink:title="Download for linux"
-       transform="matrix(0.80732462,0,0,0.68434046,15.33528,53.945387)">
+       transform="matrix(1.0245968,0,0,0.50806299,25.204942,168.61364)">
       <path
          onclick=""
          style="fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -107,14 +93,79 @@
        id="a4584-7"
        xlink:href="https://github.com/flurick/RoundDesktopCorners"
        style="display:inline;fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       xlink:title="The code of Round Corners"
-       transform="matrix(0.36048175,0,0,0.31948721,103.58136,150.90544)">
+       xlink:title="Round Display Corners - Source code"
+       transform="matrix(1.0040995,0,0,0.54905779,93.350065,158.25436)">
       <path
          onclick=""
          style="fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0"
          d="m 78.176338,252.69764 c 14.140705,0 22.001722,0 27.136062,-5.13433 5.13432,-5.13434 5.13432,-12.99536 5.13432,-27.13606 0,-14.14071 0,-22.00173 -5.13432,-27.13607 -5.13434,-5.13433 -12.995357,-5.13433 -27.136062,-5.13433 -14.140705,0 -22.001716,0 -27.136058,5.13433 -5.134331,5.13434 -5.134331,12.99536 -5.134331,27.13607 0,14.1407 0,22.00172 5.134331,27.13606 5.134342,5.13433 12.995353,5.13433 27.136058,5.13433 z"
          id="path4533-5" />
+    </a>
+    <a
+       transform="matrix(1.0040995,0,0,0.54905779,26.807346,159.57727)"
+       xlink:title="Mars base building RTS game"
+       style="display:inline;fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       xlink:href="https://github.com/flurick/marsbasebuilding"
+       id="a3732">
+      <path
+         id="path3730"
+         d="m 78.176338,252.69764 c 14.140705,0 22.001722,0 27.136062,-5.13433 5.13432,-5.13434 5.13432,-12.99536 5.13432,-27.13606 0,-14.14071 0,-22.00173 -5.13432,-27.13607 -5.13434,-5.13433 -12.995357,-5.13433 -27.136062,-5.13433 -14.140705,0 -22.001716,0 -27.136058,5.13433 -5.134331,5.13434 -5.134331,12.99536 -5.134331,27.13607 0,14.1407 0,22.00172 5.134331,27.13606 5.134342,5.13433 12.995353,5.13433 27.136058,5.13433 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         onclick="" />
+    </a>
+    <a
+       id="a3736"
+       xlink:href="https://github.com/flurick/fps"
+       style="display:inline;fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       xlink:title="Basic FPS Game"
+       transform="matrix(1.0040995,0,0,0.54905779,-43.307237,158.25435)">
+      <path
+         onclick=""
+         style="fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0"
+         d="m 78.176338,252.69764 c 14.140705,0 22.001722,0 27.136062,-5.13433 5.13432,-5.13434 5.13432,-12.99536 5.13432,-27.13606 0,-14.14071 0,-22.00173 -5.13432,-27.13607 -5.13434,-5.13433 -12.995357,-5.13433 -27.136062,-5.13433 -14.140705,0 -22.001716,0 -27.136058,5.13433 -5.134331,5.13434 -5.134331,12.99536 -5.134331,27.13607 0,14.1407 0,22.00172 5.134331,27.13606 5.134342,5.13433 12.995353,5.13433 27.136058,5.13433 z"
+         id="path3734" />
+    </a>
+    <a
+       transform="matrix(0.55075574,0,0,0.12051702,125.16415,183.09226)"
+       xlink:title=""
+       style="display:inline;fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       xlink:href="https://github.com/flurick/app/todo.html"
+       id="a3733">
+      <path
+         id="path3731"
+         d="m 78.176338,252.69764 c 14.140705,0 22.001722,0 27.136062,-5.13433 5.13432,-5.13434 5.13432,-12.99536 5.13432,-27.13606 0,-14.14071 0,-22.00173 -5.13432,-27.13607 -5.13434,-5.13433 -12.995357,-5.13433 -27.136062,-5.13433 -14.140705,0 -22.001716,0 -27.136058,5.13433 -5.134331,5.13434 -5.134331,12.99536 -5.134331,27.13607 0,14.1407 0,22.00172 5.134331,27.13606 5.134342,5.13433 12.995353,5.13433 27.136058,5.13433 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         onclick="" />
+    </a>
+    <a
+       id="a3737"
+       xlink:href="https://github.com/flurick/app/reddit.html"
+       style="display:inline;fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       xlink:title=""
+       transform="matrix(0.55075574,0,0,0.12051702,125.16415,190.98208)">
+      <path
+         onclick=""
+         style="fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0"
+         d="m 78.176338,252.69764 c 14.140705,0 22.001722,0 27.136062,-5.13433 5.13432,-5.13434 5.13432,-12.99536 5.13432,-27.13606 0,-14.14071 0,-22.00173 -5.13432,-27.13607 -5.13434,-5.13433 -12.995357,-5.13433 -27.136062,-5.13433 -14.140705,0 -22.001716,0 -27.136058,5.13433 -5.134331,5.13434 -5.134331,12.99536 -5.134331,27.13607 0,14.1407 0,22.00172 5.134331,27.13606 5.134342,5.13433 12.995353,5.13433 27.136058,5.13433 z"
+         id="path3735" />
+    </a>
+    <a
+       transform="matrix(0.55075574,0,0,0.12051702,125.16415,199.97797)"
+       xlink:title=""
+       style="display:inline;fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       xlink:href="https://github.com/flurick/app/paint.html"
+       id="a3741">
+      <path
+         id="path3739"
+         d="m 78.176338,252.69764 c 14.140705,0 22.001722,0 27.136062,-5.13433 5.13432,-5.13434 5.13432,-12.99536 5.13432,-27.13606 0,-14.14071 0,-22.00173 -5.13432,-27.13607 -5.13434,-5.13433 -12.995357,-5.13433 -27.136062,-5.13433 -14.140705,0 -22.001716,0 -27.136058,5.13433 -5.134331,5.13434 -5.134331,12.99536 -5.134331,27.13607 0,14.1407 0,22.00172 5.134331,27.13606 5.134342,5.13433 12.995353,5.13433 27.136058,5.13433 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         onclick="" />
     </a>
   </g>
 </svg>
