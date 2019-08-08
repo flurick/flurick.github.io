@@ -61,7 +61,6 @@
      style="display:inline"
      transform="translate(0,-52.916667)">
     <image
-       sodipodi:absref="C:\Users\flu\Google Drive\All Godot Projects as of 2019\godots drone\flurick.github.io\bg.png"
        xlink:href="bg.png"
        y="52.916668"
        x="-1.4210855e-14"
@@ -135,7 +134,7 @@
        transform="matrix(0.55075574,0,0,0.12051702,125.16415,183.09226)"
        xlink:title=""
        style="display:inline;fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       xlink:href="https://http://flurick.github.io/todo"
+       xlink:href="https://flurick.github.io/todo"
        id="a3733"
        target="blank">
       <path
@@ -147,7 +146,7 @@
     </a>
     <a
        id="a3737"
-       xlink:href="https://http://flurick.github.io/reddit"
+       xlink:href="https://flurick.github.io/reddit"
        style="display:inline;fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        xlink:title=""
        transform="matrix(0.55075574,0,0,0.12051702,125.16415,190.98208)"
@@ -163,7 +162,7 @@
        transform="matrix(0.55075574,0,0,0.12051702,125.16415,199.97797)"
        xlink:title=""
        style="display:inline;fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       xlink:href="https://http://flurick.github.io/paint"
+       xlink:href="https://flurick.github.io/paint"
        id="a3741"
        target="blank">
       <path
