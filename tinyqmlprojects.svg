@@ -15,7 +15,7 @@
    viewBox="0 0 211.66667 158.75"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
    sodipodi:docname="tinyqmlprojects.svg">
   <defs
      id="defs2" />
@@ -26,19 +26,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="367.43971"
-     inkscape:cy="216.9318"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="420.71716"
+     inkscape:cy="375.64574"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      units="px"
      inkscape:snap-page="true"
-     inkscape:window-width="1269"
-     inkscape:window-height="669"
-     inkscape:window-x="-3"
-     inkscape:window-y="342"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1015"
+     inkscape:window-x="0"
+     inkscape:window-y="36"
+     inkscape:window-maximized="1"
      inkscape:snap-global="true"
      inkscape:snap-object-midpoints="true"
      inkscape:snap-center="true" />
@@ -61,13 +61,14 @@
      style="display:inline"
      transform="translate(0,-52.916667)">
     <image
+       sodipodi:absref="/home/flu/Projects/flurick.github.io/bg.png"
        xlink:href="bg.png"
-       y="52.916668"
-       x="-1.4210855e-14"
-       id="image3728"
-       preserveAspectRatio="none"
+       width="211.66667"
        height="158.75"
-       width="211.66667" />
+       preserveAspectRatio="none"
+       id="image3728"
+       x="0"
+       y="52.916668" />
   </g>
   <g
      inkscape:label="svg links"
@@ -76,24 +77,11 @@
      transform="translate(0,-138.24996)"
      style="display:inline">
     <a
-       id="a4584-3"
-       xlink:href="https://github.com/flurick/RoundDesktopCorners/blob/master/overlay?raw=true"
-       style="display:inline;fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       xlink:title="Download for linux"
-       transform="matrix(1.0245968,0,0,0.50806299,25.204942,168.61364)">
-      <path
-         onclick=""
-         style="fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         inkscape:connector-curvature="0"
-         d="m 78.176338,252.69764 c 14.140705,0 22.001722,0 27.136062,-5.13433 5.13432,-5.13434 5.13432,-12.99536 5.13432,-27.13606 0,-14.14071 0,-22.00173 -5.13432,-27.13607 -5.13434,-5.13433 -12.995357,-5.13433 -27.136062,-5.13433 -14.140705,0 -22.001716,0 -27.136058,5.13433 -5.134331,5.13434 -5.134331,12.99536 -5.134331,27.13607 0,14.1407 0,22.00172 5.134331,27.13606 5.134342,5.13433 12.995353,5.13433 27.136058,5.13433 z"
-         id="path4533-6" />
-    </a>
-    <a
        id="a4584-7"
        xlink:href="https://github.com/flurick/RoundDesktopCorners"
        style="display:inline;fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        xlink:title="Round Display Corners - Source code"
-       transform="matrix(1.0040995,0,0,0.54905779,93.350065,158.25436)"
+       transform="matrix(0.91423772,0,0,0.65906423,93.733481,109.12788)"
        target="blank">
       <path
          onclick=""
@@ -103,7 +91,7 @@
          id="path4533-5" />
     </a>
     <a
-       transform="matrix(1.0040995,0,0,0.54905779,26.807346,159.57727)"
+       transform="matrix(0.93163032,0,0,0.66210977,32.940442,108.35828)"
        xlink:title="Mars base building RTS game"
        style="display:inline;fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        xlink:href="https://github.com/flurick/marsbasebuilding"
@@ -121,7 +109,7 @@
        xlink:href="https://github.com/flurick/fps"
        style="display:inline;fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        xlink:title="Basic FPS Game"
-       transform="matrix(1.0040995,0,0,0.54905779,-43.307237,158.25435)"
+       transform="matrix(1.0040995,0,0,0.58292846,-35.075336,127.18787)"
        target="blank">
       <path
          onclick=""
@@ -131,7 +119,7 @@
          id="path3734" />
     </a>
     <a
-       transform="matrix(0.55075574,0,0,0.12051702,125.16415,183.09226)"
+       transform="matrix(0.55075574,0,0,0.16399852,125.53833,136.37066)"
        xlink:title=""
        style="display:inline;fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        xlink:href="https://flurick.github.io/todo"
@@ -149,7 +137,7 @@
        xlink:href="https://flurick.github.io/reddit"
        style="display:inline;fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        xlink:title=""
-       transform="matrix(0.55075574,0,0,0.12051702,125.16415,190.98208)"
+       transform="matrix(0.55075574,0,0,0.14080839,125.53833,151.2431)"
        target="blank">
       <path
          onclick=""
@@ -159,7 +147,7 @@
          id="path3735" />
     </a>
     <a
-       transform="matrix(0.55075574,0,0,0.12051702,125.16415,199.97797)"
+       transform="matrix(0.55075574,0,0,0.14370715,125.53833,159.69357)"
        xlink:title=""
        style="display:inline;fill:#ffffff;fill-opacity:0.00392157;stroke:none;stroke-width:1.55562508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        xlink:href="https://flurick.github.io/paint"
