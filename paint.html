@@ -47,6 +47,7 @@ div {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #555;
     text-align: center;
+    position: relative;
 }
 p {
     padding: 1em 0;
@@ -67,19 +68,26 @@ main a{
     box-shadow: 0px 2px 8px rgba(0,0,0, 0.2);
     border-top: 1px solid rgba(255,255,255, .6);
     border-bottom: 1px solid rgba(0,0,0, .3);
-    padding: 1em 2em;
+    padding: 0.6em 1.6em;
     color: white;
     text-decoration: none;
     border-radius: 4px;
     display: inline-block;
-
+    /*align in card*/
+    position: absolute;
+    bottom: 0.4cm;
+    right: 0.5cm;
 }
 footer{
     opacity: 0.3;
+    height: 10cm;
     display: block;
     width: 100%;
     text-align: center;
     color: white;
+}
+footer p{
+    margin: 5cm;
 }
 </style>
 
@@ -88,7 +96,7 @@ footer{
 <main>
     <div>
     <h2>Gimp</h2>
-    <p>Image manipulation</p>
+    <p>Photo manipulation</p>
     <a class=btn href=https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref>Download</a>
     </div>
 
@@ -134,5 +142,5 @@ footer{
 
 </main>
 <footer>
-    <p>As of January 2020</p>
+    <p>January 2020</p>
 </footer>
