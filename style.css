@@ -24,7 +24,11 @@ body {
   box-shadow: 0 1mm 4mm #23415b1c;
   border-radius: 4px;
   position: relative;
+
+  height: 60ch;
+  max-height: 80%;
 }
+
 body::after {
 	content: "";
 	position: absolute;
@@ -59,8 +63,8 @@ body::after {
 
 nav{
   display: inline-block;
-  width: 20ch;
-  background: #7be5f7;
+  width: 25ch;
+  background: #e8fcff;
   -background: linear-gradient(90deg, aqua 85%, #3fb1b1  100%);
   border-radius: 4px 0 0 4px;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -68,6 +72,10 @@ nav{
   font-variant: petite-caps;
   padding: 2ex;
   position: relative;
+}
+nav {
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 nav::after {
     content: "";
@@ -80,10 +88,10 @@ nav::after {
     border-radius: 50%;
     height: 97%;
 }
-
 ul {
-  padding-left: 3.5ex;
+  -padding-left: 3.5ex;
   list-style: cambodian;
+  list-style: none;
   overflow: hidden;
 }
 li {
@@ -110,6 +118,6 @@ article {
     font-size: xx-small;
   }
   ul {
-    padding-left: 2ch;
+    -padding-left: 2ch;
   }
 }
